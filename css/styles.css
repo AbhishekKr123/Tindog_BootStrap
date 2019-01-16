@@ -1,36 +1,31 @@
 body {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+p{
+  color:#8F8F8F;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: #FFF;
-}
-
-.container-fluid {
-  padding: 3% 15%;
-}
-
-h1 {
+/* Heading */
+.big-heading{
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
 }
-h2{
-  font-family:"Montserrat", sans-serif;
-  font-weight: bold;
+.section-heading{
   font-size:3rem;
   line-height: 1.5;
+  font-weight: bold;
 }
-h3{
-  font-family:"Montserrat", sans-serif;
-  font-weight:bold;
-  font-size:1.2rem;
+
+
+
+.container-fluid {
+  padding: 7% 15%;
 }
-p{
-  color:#8F8F8F;
-}
+
+
 
 /* Navigation Bar */
 .navbar {
@@ -54,20 +49,37 @@ p{
 .download-btn{
   margin:5% 3% 5% 0;
 }
+/* Title Section */
+#title {
+  background-color: #ff4c68;
+  color: #FFF;
+  text-align: left;
+}
+#title .container-fluid{
+  padding:3% 15% 7%;
+}
+
 /* Title-Image */
 .title-image{
   width:60%;
-  transform: rotate(25deg)
+  transform: rotate(25deg);
+  position:absolute;
+  right:30%;
 }
 
 /* Features-Section */
 
 #features{
-  padding:7% 15%;
+  background-color: white;
+  position:relative;
+  z-index: 1;
 }
 .feature-box{
-  text-align:center;
   padding:5%;
+}
+.feature-title{
+  font-weight:bold;
+  font-size:1.2rem;
 }
 .icon{
   color:#ef8172;
@@ -79,8 +91,6 @@ p{
 
 /* Testimonials */
 #testimonials{
-  padding:7% 15%;
-  text-align: center;
   background-color: #ef8172;
   color:#fff;
 }
@@ -89,13 +99,51 @@ p{
   border-radius:100%;
   margin:20px;
 }
+.testimonial-text{
+  font-weight: bold;
+  font-size:3rem;
+  line-height: 1.5;
+}
+
 /* Press */
 #press{
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 .press-logo{
   width:15%;
   margin:20px 20px 15px;
+}
+/* Pricing */
+#pricing{
+  padding:100px;
+}
+.pricing-col{
+  padding:3% 2%;
+}
+.price-text{
+  font-size:3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+@media(max-width:1028px){
+  .title-image{
+    position:static;
+    transform:rotate(0);
+  }
+}
+/* CTA */
+#cta{
+  background-color: #ef8172;
+}
+.cta-h3{
+  color:white;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+#footer i{
+  margin:20px 10px;
 }
